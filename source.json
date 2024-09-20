@@ -1,0 +1,55 @@
+{
+    "privileges": [
+      {
+        "resource": {"db": "", "collection": ""},
+        "actions": ["viewRole", "viewUser"]
+      },
+      {
+        "resource": {"cluster": true},
+        "actions": ["getCmdLineOpts"]
+      },
+      {
+        "resource": {"db": "admin", "collection": "system.users"},
+        "actions": ["find"]
+      },
+      {
+        "resource": {"db": "admin", "collection": "system.roles"},
+        "actions": ["find"]
+      },
+      {
+        "resource": {"db": "", "collection": ""},
+        "actions": ["viewUser", "viewRole"]
+      },
+      {
+        "resource": {"db": "config", "collection": ""},
+        "actions": ["viewUser", "viewRole"]
+      },
+      {
+        "resource": {"db": "local", "collection": ""},
+        "actions": ["viewUser", "viewRole"]
+      }
+    ],
+    "roles": [
+      {
+        "role": "clusterMonitor",
+        "db": "admin",
+        "description": "Role for monitoring the cluster"
+      },
+      {
+        "role": "userAdminAnyDatabase",
+        "db": "admin",
+        "description": "Role for administering users in any database"
+      },
+      {
+        "role": "readWriteAnyDatabase",
+        "db": "admin",
+        "description": "Role for read-write access to any database"
+      },
+      {
+        "role": "dbAdminAnyDatabase",
+        "db": "admin",
+        "description": "Role for administering any database"
+      }
+    ]
+  }
+  
